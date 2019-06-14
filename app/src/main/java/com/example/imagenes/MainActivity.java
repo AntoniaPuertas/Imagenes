@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnCamara;
     Button btnGaleria;
+    Button btnSiguiente;
     ImageView imgResultado;
 
     final static int RESULTADO_GALERIA = 2;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnCamara = findViewById(R.id.btnCamara);
         btnGaleria = findViewById(R.id.btngaleria);
+        btnSiguiente = findViewById(R.id.btnSiguiente);
         imgResultado = findViewById(R.id.imgResultado);
 
         btnGaleria.setOnClickListener(new View.OnClickListener() {
@@ -59,6 +61,15 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        btnSiguiente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MostrarImagenActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override

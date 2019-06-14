@@ -4,4 +4,6 @@
     <string name="camara">Cámara</string>
     <string name="galeria">Galería</string>
     <string name="imagen">Imagen</string>
+    <string name="mostrar">Mostrar</string>
+    <string name="siguiente">Siguiente</string>
 </resources>
